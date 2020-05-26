@@ -5,6 +5,7 @@ import Voz from "./vista/Voz";
 import Galeria from "./vista/Galeria";
 import InicioSesion from "./vista/InicioSesion";
 import Registro from "./vista/Registro";
+import EnvioServer from "./vista/EnvioServer";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -51,6 +52,7 @@ function CapsulasStack() {
       <Stack.Screen name="Voz" component={Voz} />
       <Stack.Screen name="Galeria" component={Galeria} />
       <Stack.Screen name="Registro" component={Registro} />
+      <Stack.Screen name="EnvioServer" component={EnvioServer} />
     </Stack.Navigator>
   );
 }

@@ -22,6 +22,14 @@ class Home extends Component {
     return (
       <ScrollView style={ScrollView} contentContainerStyle={styles.container}>
         <Text style={styles.tittle}>Easy Text</Text>
+        <View>
+          <Button
+            onPress={() => this.props.navigation.navigate("EnvioServer")}
+            style={styles.myButton}
+          >
+            <Text style={styles.textButton}>Envío Server</Text>
+          </Button>
+        </View>
         {this.capsulas.map((capsula, key) => {
           return (
             <Card
